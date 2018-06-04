@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@mipmap/ic_back"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/dateString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="2018 -18-1881"/>
+    <TextView
+        android:id="@+id/nowxq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:text="这是一句话"/>
+    <TextView
+        android:id="@+id/tizhong"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="80dp"
+        android:text="170斤"
+
+        android:textColor="#ff2d2d"
+        android:textSize="21dp"
+        android:layout_alignParentRight="true"/>
+    
+</RelativeLayout>
