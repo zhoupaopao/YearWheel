@@ -12,6 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -66,10 +68,11 @@ public class ListAdapter extends BaseAdapter {
         viewHolder.xinqing.setText(msg[1]);
         viewHolder.nowdate.setText(msg[3]);
         imgurl=msg[2];
-        finalViewHolder = viewHolder;
+        Glide.with(context).load(imgurl).into(viewHolder.pic);
+//        finalViewHolder = viewHolder;
         //需要在子线程中进行网络操作（耗时操作）
-                        MyThread myThread=new MyThread();
-                myThread.start();
+//                        MyThread myThread=new MyThread();
+//                myThread.start();
 //        new Thread(new Runnable() {
 //
 //            @Override
