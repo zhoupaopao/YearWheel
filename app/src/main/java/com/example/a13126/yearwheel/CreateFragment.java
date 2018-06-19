@@ -224,6 +224,7 @@ public class CreateFragment extends Fragment {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 String htmlStr = response.body().string();
+                Log.i("onResponse: ", htmlStr);
 //                Log.i("result", "http://ring.thinghigh.cn"+htmlStr);
                 com.alibaba.fastjson.JSONObject jsonObject = (com.alibaba.fastjson.JSONObject) JSON.parse(htmlStr);
                 com.alibaba.fastjson.JSONObject datamsg = jsonObject.getJSONObject("data");

@@ -46,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         fragments=new ArrayList<>();
         fragments.add(new CreateFragment());
         fragments.add(new ListFragment());
+        fragments.add(new VideoFragment());
         titlelist.add("创建");
         titlelist.add("展示");
+        titlelist.add("播放展示");
         tabLayout.setTabMode(TabLayout.MODE_FIXED);
         tabLayout.setTabTextColors(ContextCompat.getColor(this, R.color.gray), ContextCompat.getColor(this, R.color.black));
 

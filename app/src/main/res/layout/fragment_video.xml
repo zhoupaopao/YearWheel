@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/show_video"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_radio_blue"
+        android:layout_margin="40dp"
+        android:text="展示音频变化"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:id="@+id/pci"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_back"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/dateString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="2018 -18-1881"/>
+        <TextView
+            android:id="@+id/nowxq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="17dp"
+            android:text="这是一句话"/>
+        <TextView
+            android:id="@+id/tizhong"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="170斤"
+            android:textColor="#ff2d2d"
+            android:textSize="21dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
