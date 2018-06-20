@@ -12,6 +12,7 @@
 
     <RelativeLayout android:layout_width="match_parent"
         android:id="@+id/pci"
+        android:visibility="gone"
         android:layout_height="wrap_content"
         android:paddingRight="30dp"
         android:paddingLeft="30dp"
@@ -20,7 +21,6 @@
             android:id="@+id/img"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@mipmap/ic_back"
             android:scaleType="fitXY"
             />
         <TextView
@@ -28,29 +28,27 @@
             android:id="@+id/dateString"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="2018 -18-1881"/>
+            android:gravity="center_horizontal" />
         <TextView
             android:id="@+id/nowxq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="300dp"
             android:layout_centerHorizontal="true"
-            android:textSize="17dp"
-            android:text="这是一句话"/>
+            android:textSize="17dp" />
         <TextView
             android:id="@+id/tizhong"
             android:layout_width="80dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:gravity="right"
             android:layout_marginBottom="100dp"
             android:layout_marginRight="60dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:text="170斤"
             android:textColor="#ff2d2d"
             android:textSize="21dp"
             />
+
 
     </RelativeLayout>
 </RelativeLayout>
